@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':SwitchDash')
+    implementation project(path: ':EngineDesktop')
+    implementation project(path: ':Engine')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
